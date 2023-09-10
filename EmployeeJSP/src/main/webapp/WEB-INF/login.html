@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<% 
+	String message=(String)request.getAttripue("message");
+	if(message!=null){
+	%>
+	<h21><%=message%></h21>
+	<%
+	}
+	%>
+	
+<form action="login"method="post">
+	Email:<input type="text"name="email">
+	Password:<input type="number"name="password">
+	<button>Login</button>
+	
+</form>
+</body>
+</html>
